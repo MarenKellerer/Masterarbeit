@@ -1,7 +1,6 @@
 Es wurde mit R version 4.2.0 gearbeitet. 
 Folgende Pakete werden benutzt:
-
--caret    6.0-92 \\
+-caret    6.0-92 
 -cowplot   1.1.1
 -dplyr  1.0.9
 -forcats  0.5.1
