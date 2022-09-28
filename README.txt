@@ -19,13 +19,13 @@ Folgende Pakete werden benutzt:
 -stringr  1.4.0
 -tidyr   1.2.0
 
-Alle Datensätze sind im Ordner "Data" zu finden. Der Ordner "Plots" enthält alle 
-Plots und Tabellen.
+Alle Datensätze sind im Ordner "Data" zu finden und der Ordner "Plots" enthält alle erstellten Plots.
 
-"get_data.R" erzeugt den Datensatz "wave2_clean" und "wave3_clean" welcher
+"get_data.R" erzeugt die Datensätz "wave2_clean" und "wave3_clean" welcher
 die Grundlage aller Analysen bildet (nur nötige Variablen, ohne Nichtwähler bzw. Sonstige,
-nur Kombinationen mit 20 Ausprägungen, usw.). Diese Datei muss nicht ausgeführt
-werden, alle weiteren Skripte greifen direkt auf "wave2_clean" und "wave3_clean" zu.
+nur Kombinationen mit 20 Ausprägungen, usw.). Außerdem wird für den Vergleich des Gesamtdatensatzes und der Stichprobe
+der Datensatz "data_all_clean" erstellt. "wave2_missings" wird für den in "decdribe_data.R" erstellten missings-plot gebraucht.
+Diese Datei muss nicht ausgeführt werden, alle weiteren Skripte greifen direkt auf "wave2_clean", "wave3_clean", "data_all_clean" und "wave2_missings" zu.
 
 "describe_data.R" erstellt einige deskriptive Plots z.B. zu den fehlenden Werten,
 der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw.
