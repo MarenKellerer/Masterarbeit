@@ -6,6 +6,7 @@ Folgende Pakete werden benutzt:
 -forcats  0.5.1
 -gdata  2.18.0.1
 -ggplot2  3.3.6
+-ggpubr   0.4.0
 -grid   4.2.0
 -gridExtra  2.3
 -Metrics    0.1.4
@@ -25,18 +26,22 @@ Alle Datensätze sind im Ordner "Data" zu finden und der Ordner "Plots" enthält
 die Grundlage aller Analysen bildet (nur nötige Variablen, ohne Nichtwähler bzw. Sonstige,
 nur Kombinationen mit 20 Ausprägungen, usw.). Außerdem wird für den Vergleich des Gesamtdatensatzes und der Stichprobe
 der Datensatz "data_all_clean" erstellt. "wave2_missings" wird für den in "decdribe_data.R" erstellten missings-plot gebraucht.
-Diese Datei muss nicht ausgeführt werden, alle weiteren Skripte greifen direkt auf "wave2_clean", "wave3_clean", "data_all_clean" und "wave2_missings" zu.
+Diese Datei muss nicht ausgeführt werden, alle weiteren Skripte greifen direkt auf "wave2_clean", "wave3_clean", 
+"data_all_clean" und "wave2_missings" zu.
 
 "describe_data.R" erstellt einige deskriptive Plots z.B. zu den fehlenden Werten,
 der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw.
 
-"modelling.R" stellt die verschiedenen Modelle auf. Zum Einen das Random Forest Modell 
-und zum Anderen die drei verschiedenen Dempster Bounds. 
+"functions_modeling.R" beschreibt alle implementierten Funktionen, die in der Datei "modelling.R"
+verwendet werden. 
 
-"weights.R" führt die Simulation der Gewichtungsvariable durch, die für die Performance
-Beurteilund des Random Forests benötigt wird.
+"modelling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions_modeling.R" auf. 
+Zum Einen das Random Forest Modell und zum Anderen die drei verschiedenen Dempster Bounds. Außerdem werden 
+die Plots zur Darstellung der Ergebnisse erstellt.
 
 Datensätze:
 -"wave2_clean": Datensatz der 2. Welle nach cleaning, Grundlage aller Analysen
 -"wave3_clean": Datensatz der 3. Welle nach cleaning, Grundlage aller Analysen
+-"wave2_missings.csv": Datensatz für die Erstellung der Missing-plots
+-"data_all_clean": Datensatz, um den Vergleich zwischen dem gesamten Datensatz und der Stichprobe heranzuziehen
 
