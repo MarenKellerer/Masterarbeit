@@ -35,7 +35,7 @@ der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw.
 "functions_modeling.R" beschreibt alle implementierten Funktionen, die in der Datei "modelling.R"
 verwendet werden. 
 
-"modelling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions_modeling.R" auf. 
+"modeling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions_modeling.R" auf. 
 Zum Einen das Random Forest Modell und zum Anderen die drei verschiedenen Dempster Bounds. Außerdem werden 
 die Plots zur Darstellung der Ergebnisse erstellt.
 
