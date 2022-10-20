@@ -45,3 +45,5 @@ Datensätze:
 -"wave2_missings.csv": Datensatz für die Erstellung der Missing-plots
 -"data_all_clean": Datensatz, um den Vergleich zwischen dem gesamten Datensatz und der Stichprobe heranzuziehen
 
+Die Datensätze sind nicht öffentlich zugänglich. Für weitere Fragen: Maren.Kellerer@gmail.com.
+
