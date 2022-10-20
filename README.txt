@@ -20,7 +20,7 @@ Folgende Pakete werden benutzt:
 -stringr  1.4.0
 -tidyr   1.2.0
 
-Alle Datensätze sind im Ordner "Data" zu finden und der Ordner "Plots" enthält alle erstellten Plots.
+Der Ordner "Plots" enthält alle erstellten Plots.
 
 "get_data.R" erzeugt die Datensätz "wave2_clean" und "wave3_clean" welcher
 die Grundlage aller Analysen bildet (nur nötige Variablen, ohne Nichtwähler bzw. Sonstige,
