@@ -32,10 +32,10 @@ Diese Datei muss nicht ausgeführt werden, alle weiteren Skripte greifen direkt 
 "describe_data.R" erstellt einige deskriptive Plots anhand der Datei "functions_modeling.R" 
 z.B. zu den fehlenden Werten, der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw. 
 
-"functions_modeling.R" beschreibt alle implementierten Funktionen, die in der Datei "describe_data.R" und "modelling.R"
+"functions.R" beschreibt alle implementierten Funktionen, die in der Datei "describe_data.R" und "modelling.R"
 verwendet werden. 
 
-"modeling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions_modeling.R" auf. 
+"modeling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions.R" auf. 
 Zum Einen das Random Forest Modell und zum Anderen die drei verschiedenen Dempster Bounds. Außerdem werden 
 die Plots zur Darstellung der Ergebnisse erstellt.
 
@@ -45,5 +45,6 @@ Datensätze:
 -"wave2_missings.csv": Datensatz für die Erstellung der Missing-plots
 -"data_all_clean": Datensatz, um den Vergleich zwischen dem gesamten Datensatz und der Stichprobe heranzuziehen
 
-Die Datensätze sind nicht öffentlich zugänglich. Für weitere Fragen: Maren.Kellerer@gmail.com.
+
+Die Datensätze sind öffentlich nicht zugänglich.
 
