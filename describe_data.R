@@ -1,4 +1,5 @@
 
+# for using all the implemented functions
 source("functions.R")
 
 # read data 
