@@ -34,8 +34,8 @@ glimpse(wave2)
 glimpse(wave3)
 
 # how many people are decided/undecided before cleaning data?
-prop.table(table(wave2$ontic_bin))
-prop.table(table(wave3$ontic_bin))
+prop.table(table(wave2$ontic_bin)) # 86.9% decided and 13.1% undecided
+prop.table(table(wave3$ontic_bin)) # 86.3% decided and 13.7% undecided
 
 
 # 3. Clean data -----------------------------------------------------------
