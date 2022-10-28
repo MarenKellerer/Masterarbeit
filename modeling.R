@@ -1,4 +1,4 @@
-
+# using the implemented functions
 source("functions.R")
 
 # read clean data 
@@ -131,6 +131,7 @@ ggsave("./Plots/comparison_rf.png",
        height = 6,
        dpi = 1000)
 
+
 # 2. Dempster Bounds ======================================================
 
 # A) without restrictions -------------------------------------------------
@@ -187,10 +188,7 @@ ggsave("./Plots/comparison_dempster.png",
        dpi = 1000)
 
 
-
-
 # B) 80/20 restriction ----------------------------------------------------
-
 
 # i. Wave 2
 # get data frame of restricted dempster bounds for all parties
