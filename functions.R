@@ -126,6 +126,7 @@ getting_accuracy <- function(dataset, seed = NULL,
       train <- select(train, -c(ID, Gewicht))
       test <- select(test, -c(ID, Gewicht))
       
+      # sample a weight vector
       ind <- sample(1:length(weights_sim), nrow(train))
       weights <- weights_sim[ind]
       fit <- ranger(Ontic ~ ., data = train, mtry = best_mtry,
@@ -185,7 +186,6 @@ plotting_simulation_example <- function(dataset, title) {
 #         weight_type - which weight should be used for fitting the model. 
 #                       civey: using weights given in dataset
 #                       none: using no weights
-#                       simulation: using simulated weights
 #         title - title of the plot
 # Output: ggplot of predicted frequencies of the undecided for each party 
 predicting_undecided <- function(dataset,
@@ -279,7 +279,7 @@ predicting_undecided <- function(dataset,
 # Function getting the lower and upper bound of the dempster bounds 
 # (with/without weights and with/without restricitons)
 # Input:  dataset - data frame
-#         party (optional) - possible options: SPD, CDU.CSU, FPD, Linke, Grüne, AfD
+#         party - possible options: SPD, CDU.CSU, FPD, Linke, Grüne, AfD
 #         type - possible options: demp, weighted_demp, res_demp
 #         coalition (optional) - choose any combinations of the 6 parties 
 #                                to build a coalition
@@ -296,7 +296,7 @@ get_dempster_bounds <- function(dataset, party = c("SPD", "CDU.CSU", "FDP",
                                "Grüne", "AfD", "Gewicht")]
   dataset_lower <- dataset[, c("ontic_bin", "CDU.CSU", "FDP", "SPD", "Linke", 
                                "Grüne", "AfD", "Gewicht")]
-  #dataset_without_party <- dataset[, !names(dataset) %in% party]
+
   sum_undecided_lower <- 0 # count for 80/20 restriction
   sum_decided_lower <- 0 # count for 80/20 restriction
   sum_undecided_upper <- 0 
@@ -446,7 +446,6 @@ get_dempster_bounds <- function(dataset, party = c("SPD", "CDU.CSU", "FDP",
 
 # Function for plotting the dempster bounds
 # Input:  dataset - data frame
-#         party (optional) - possible options: SPD, CDU.CSU, FPD, Linke, Grüne, AfD
 #         demp_type - possible options: demp, weighted_demp, res_demp
 # Output: data frame that combines lower_bound, upper_bound and middle point
 #         for every party
