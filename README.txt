@@ -29,11 +29,11 @@ der Datensatz "data_all_clean" erstellt. "wave2_missings" wird für den in "decd
 Diese Datei muss nicht ausgeführt werden, alle weiteren Skripte greifen direkt auf "wave2_clean", "wave3_clean", 
 "data_all_clean" und "wave2_missings" zu.
 
-"describe_data.R" erstellt einige deskriptive Plots anhand der Datei "functions_modeling.R" 
-z.B. zu den fehlenden Werten, der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw. 
-
 "functions.R" beschreibt alle implementierten Funktionen, die in der Datei "describe_data.R" und "modelling.R"
 verwendet werden. 
+
+"describe_data.R" erstellt einige deskriptive Plots anhand der Datei "functions.R" 
+z.B. zu den fehlenden Werten, der Vergleich des gesamten Datensatzen und der Stichprobe in der 2. Welle, usw. 
 
 "modeling.R" stellt die verschiedenen Modelle anhand der Funktionen aus "functions.R" auf. 
 Zum Einen das Random Forest Modell und zum Anderen die drei verschiedenen Dempster Bounds. Außerdem werden 
